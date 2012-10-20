@@ -1,0 +1,17 @@
+V3 9
+FL //fs-caedm/clkrbj/Documents/320/Lab6/Lab6/paddle_top.vhd 2012/10/07.14:42:38 P.15xf
+EN work/paddle_top 1349726068 \
+      FL //fs-caedm/clkrbj/Documents/320/Lab6/Lab6/paddle_top.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627
+AR work/paddle_top/Behavioral 1349726069 \
+      FL //fs-caedm/clkrbj/Documents/320/Lab6/Lab6/paddle_top.vhd \
+      EN work/paddle_top 1349726068 CP work/vga_timing
+FL //fs-caedm/clkrbj/Documents/320/Lab6/Lab6/vga_timing.vhd 2012/10/04.17:29:54 P.15xf
+EN work/vga_timing 1349726066 \
+      FL //fs-caedm/clkrbj/Documents/320/Lab6/Lab6/vga_timing.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627
+AR work/vga_timing/Behavioral 1349726067 \
+      FL //fs-caedm/clkrbj/Documents/320/Lab6/Lab6/vga_timing.vhd \
+      EN work/vga_timing 1349726066
+FL D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.vhd 2012/10/04.18:31:33 P.15xf
+FL D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/vga_timing.vhd 2012/10/04.17:29:54 P.15xf

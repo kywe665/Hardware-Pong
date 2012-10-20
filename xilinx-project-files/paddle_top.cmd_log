@@ -1,0 +1,177 @@
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+xst -intstyle ise -ifn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.xst" -ofn "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 
+xst -intstyle ise -ifn "J:/Documents/320/Lab6/Lab6/paddle_top.xst" -ofn "J:/Documents/320/Lab6/Lab6/paddle_top.syr" 
+xst -intstyle ise -ifn "J:/Documents/320/Lab6/Lab6/paddle_top.xst" -ofn "J:/Documents/320/Lab6/Lab6/paddle_top.syr" 
+xst -intstyle ise -ifn "J:/Documents/320/Lab6/Lab6/paddle_top.xst" -ofn "J:/Documents/320/Lab6/Lab6/paddle_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_timing_controller.ucf -p xc3s500e-fg320-4 paddle_top.ngc paddle_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o paddle_top_map.ncd paddle_top.ngd paddle_top.pcf 
+par -w -intstyle ise -ol high -t 1 paddle_top_map.ncd paddle_top.ncd paddle_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml paddle_top.twx paddle_top.ncd -o paddle_top.twr paddle_top.pcf -ucf vga_timing_controller.ucf 
+bitgen -intstyle ise -f paddle_top.ut paddle_top.ncd 

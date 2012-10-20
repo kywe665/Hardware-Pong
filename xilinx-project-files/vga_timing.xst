@@ -1,0 +1,5 @@
+set -tmpdir "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/xst/projnav.tmp"
+set -xsthdpdir "D:/Put_Your_Temp_Files_Here/212/Lab6/Lab6/xst"
+elaborate
+-ifn vga_timing.prj
+-ifmt mixed

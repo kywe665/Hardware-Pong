@@ -1,0 +1,2 @@
+vhdl work "vga_timing.vhd"
+vhdl work "paddle_top.vhd"

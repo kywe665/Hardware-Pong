@@ -1,0 +1,490 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.44 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.44 secs
+ 
+--> Reading design: paddle_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "paddle_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "paddle_top"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : paddle_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "//fs-caedm/clkrbj/Documents/320/Lab6/Lab6/vga_timing.vhd" in Library work.
+Architecture behavioral of Entity vga_timing is up to date.
+Compiling vhdl file "//fs-caedm/clkrbj/Documents/320/Lab6/Lab6/paddle_top.vhd" in Library work.
+Entity <paddle_top> compiled.
+Entity <paddle_top> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <paddle_top> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <vga_timing> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <paddle_top> in library <work> (Architecture <behavioral>).
+Entity <paddle_top> analyzed. Unit <paddle_top> generated.
+
+Analyzing Entity <vga_timing> in library <work> (Architecture <Behavioral>).
+Entity <vga_timing> analyzed. Unit <vga_timing> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <vga_timing>.
+    Related source file is "//fs-caedm/clkrbj/Documents/320/Lab6/Lab6/vga_timing.vhd".
+    Found 10-bit comparator greater for signal <blank$cmp_gt0000> created at line 86.
+    Found 10-bit comparator greater for signal <blank$cmp_gt0001> created at line 86.
+    Found 10-bit register for signal <h_counter>.
+    Found 10-bit adder for signal <h_counternext$addsub0000> created at line 75.
+    Found 10-bit comparator greater for signal <HS$cmp_gt0000> created at line 89.
+    Found 10-bit comparator less for signal <HS$cmp_lt0000> created at line 89.
+    Found 1-bit register for signal <r_reg>.
+    Found 10-bit up counter for signal <v_counter>.
+    Found 10-bit comparator greater for signal <VS$cmp_gt0000> created at line 92.
+    Found 10-bit comparator less for signal <VS$cmp_lt0000> created at line 92.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+Unit <vga_timing> synthesized.
+
+
+Synthesizing Unit <paddle_top>.
+    Related source file is "//fs-caedm/clkrbj/Documents/320/Lab6/Lab6/paddle_top.vhd".
+    Found 9-bit adder for signal <$add0000> created at line 141.
+    Found 17-bit up counter for signal <anim_counter>.
+    Found 10-bit comparator greater for signal <border_on$cmp_gt0000> created at line 174.
+    Found 10-bit comparator greater for signal <border_on$cmp_gt0001> created at line 174.
+    Found 10-bit comparator less for signal <border_on$cmp_lt0000> created at line 174.
+    Found 10-bit comparator less for signal <border_on$cmp_lt0001> created at line 174.
+    Found 10-bit comparator less for signal <border_on$cmp_lt0002> created at line 174.
+    Found 10-bit comparator less for signal <border_on$cmp_lt0003> created at line 174.
+    Found 9-bit register for signal <box_left>.
+    Found 9-bit addsub for signal <box_left_next>.
+    Found 9-bit adder for signal <box_on$add0001> created at line 179.
+    Found 10-bit comparator greatequal for signal <box_on$cmp_ge0000> created at line 179.
+    Found 10-bit comparator greatequal for signal <box_on$cmp_ge0001> created at line 179.
+    Found 10-bit comparator less for signal <box_on$cmp_lt0000> created at line 179.
+    Found 10-bit comparator less for signal <box_on$cmp_lt0001> created at line 179.
+    Found 9-bit register for signal <box_top>.
+    Found 9-bit addsub for signal <box_top_next>.
+    Found 1-bit register for signal <discard_cycle>.
+    Found 16-bit up counter for signal <frame_count>.
+    Found 1-bit register for signal <move_en>.
+    Found 1-bit register for signal <move_right>.
+    Found 9-bit comparator greatequal for signal <move_right$cmp_ge0000> created at line 141.
+    Found 1-bit register for signal <move_up>.
+    Found 9-bit comparator greatequal for signal <move_up$cmp_ge0000> created at line 138.
+    Found 9-bit comparator lessequal for signal <move_up$cmp_le0000> created at line 138.
+    Found 9-bit adder for signal <paddleL_on$add0001> created at line 166.
+    Found 10-bit comparator greatequal for signal <paddleL_on$cmp_ge0000> created at line 166.
+    Found 10-bit comparator greatequal for signal <paddleL_on$cmp_ge0001> created at line 166.
+    Found 10-bit comparator less for signal <paddleL_on$cmp_lt0000> created at line 166.
+    Found 10-bit comparator less for signal <paddleL_on$cmp_lt0001> created at line 166.
+    Found 9-bit updown counter for signal <paddleL_top>.
+    Found 9-bit comparator greatequal for signal <paddleL_top$cmp_ge0000> created at line 148.
+    Found 9-bit comparator greater for signal <paddleL_top$cmp_gt0000> created at line 148.
+    Found 9-bit comparator lessequal for signal <paddleL_top$cmp_le0000> created at line 148.
+    Found 9-bit adder for signal <paddleR_on$add0001> created at line 170.
+    Found 10-bit comparator greatequal for signal <paddleR_on$cmp_ge0000> created at line 170.
+    Found 10-bit comparator greatequal for signal <paddleR_on$cmp_ge0001> created at line 170.
+    Found 10-bit comparator less for signal <paddleR_on$cmp_lt0000> created at line 170.
+    Found 10-bit comparator less for signal <paddleR_on$cmp_lt0001> created at line 170.
+    Found 9-bit updown counter for signal <paddleR_top>.
+    Found 9-bit comparator greatequal for signal <paddleR_top$cmp_ge0000> created at line 152.
+    Found 9-bit comparator greater for signal <paddleR_top$cmp_gt0000> created at line 152.
+    Found 9-bit comparator lessequal for signal <paddleR_top$cmp_le0000> created at line 152.
+    Summary:
+	inferred   4 Counter(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred  27 Comparator(s).
+Unit <paddle_top> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 10-bit adder                                          : 1
+ 9-bit adder                                           : 4
+ 9-bit addsub                                          : 2
+# Counters                                             : 4
+ 10-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
+ 9-bit updown counter                                  : 2
+# Registers                                            : 7
+ 1-bit register                                        : 4
+ 10-bit register                                       : 1
+ 9-bit register                                        : 2
+# Comparators                                          : 33
+ 10-bit comparator greatequal                          : 6
+ 10-bit comparator greater                             : 6
+ 10-bit comparator less                                : 12
+ 9-bit comparator greatequal                           : 4
+ 9-bit comparator greater                              : 2
+ 9-bit comparator lessequal                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 10-bit adder                                          : 1
+ 9-bit adder                                           : 4
+ 9-bit addsub                                          : 2
+# Counters                                             : 4
+ 10-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
+ 9-bit updown counter                                  : 2
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Comparators                                          : 33
+ 10-bit comparator greatequal                          : 6
+ 10-bit comparator greater                             : 6
+ 10-bit comparator less                                : 12
+ 9-bit comparator greatequal                           : 4
+ 9-bit comparator greater                              : 2
+ 9-bit comparator lessequal                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <paddle_top> ...
+
+Optimizing unit <vga_timing> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block paddle_top, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 77
+ Flip-Flops                                            : 77
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : paddle_top.ngr
+Top Level Output File Name         : paddle_top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 15
+
+Cell Usage :
+# BELS                             : 542
+#      GND                         : 1
+#      INV                         : 20
+#      LUT1                        : 48
+#      LUT2                        : 98
+#      LUT3                        : 32
+#      LUT3_L                      : 4
+#      LUT4                        : 62
+#      LUT4_D                      : 5
+#      LUT4_L                      : 3
+#      MUXCY                       : 172
+#      MUXF5                       : 5
+#      VCC                         : 1
+#      XORCY                       : 91
+# FlipFlops/Latches                : 77
+#      FD                          : 1
+#      FDE                         : 48
+#      FDR                         : 18
+#      FDRE                        : 10
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 4
+#      OBUF                        : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      144  out of   4656     3%  
+ Number of Slice Flip Flops:             77  out of   9312     0%  
+ Number of 4 input LUTs:                272  out of   9312     2%  
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    232     6%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 77    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.422ns (Maximum Frequency: 134.735MHz)
+   Minimum input arrival time before clock: 5.034ns
+   Maximum output required time after clock: 13.458ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.422ns (frequency: 134.735MHz)
+  Total number of paths / destination ports: 2957 / 162
+-------------------------------------------------------------------------
+Delay:               7.422ns (Levels of Logic = 6)
+  Source:            box_top_1 (FF)
+  Destination:       move_up (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: box_top_1 to move_up
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.591   0.762  box_top_1 (box_top_1)
+     LUT1:I0->O            1   0.704   0.000  Madd_box_on_add0001_cy<1>_rt (Madd_box_on_add0001_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  Madd_box_on_add0001_cy<1> (Madd_box_on_add0001_cy<1>)
+     XORCY:CI->O           2   0.804   0.482  Madd_box_on_add0001_xor<2> (box_on_add0001<2>)
+     LUT3_L:I2->LO         1   0.704   0.104  move_up_not00022 (move_up_not00022)
+     LUT4:I3->O            1   0.704   0.424  move_up_not000212 (move_up_not000212)
+     LUT4:I3->O            1   0.704   0.420  move_up_not000290 (move_up_not0002)
+     FDE:CE                    0.555          move_up
+    ----------------------------------------
+    Total                      7.422ns (5.230ns logic, 2.192ns route)
+                                       (70.5% logic, 29.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 144 / 36
+-------------------------------------------------------------------------
+Offset:              5.034ns (Levels of Logic = 11)
+  Source:            btn<3> (PAD)
+  Destination:       paddleL_top_8 (FF)
+  Destination Clock: clk rising
+
+  Data Path: btn<3> to paddleL_top_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.218   1.108  btn_3_IBUF (btn_3_IBUF)
+     LUT2:I0->O            1   0.704   0.420  paddleL_top_not0003_inv2 (paddleL_top_not0003_inv)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_paddleL_top_cy<0> (Mcount_paddleL_top_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_paddleL_top_cy<1> (Mcount_paddleL_top_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_paddleL_top_cy<2> (Mcount_paddleL_top_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_paddleL_top_cy<3> (Mcount_paddleL_top_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_paddleL_top_cy<4> (Mcount_paddleL_top_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_paddleL_top_cy<5> (Mcount_paddleL_top_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_paddleL_top_cy<6> (Mcount_paddleL_top_cy<6>)
+     MUXCY:CI->O           0   0.059   0.000  Mcount_paddleL_top_cy<7> (Mcount_paddleL_top_cy<7>)
+     XORCY:CI->O           1   0.804   0.000  Mcount_paddleL_top_xor<8> (Result<8>1)
+     FDE:D                     0.308          paddleL_top_8
+    ----------------------------------------
+    Total                      5.034ns (3.506ns logic, 1.528ns route)
+                                       (69.6% logic, 30.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 3415 / 10
+-------------------------------------------------------------------------
+Offset:              13.458ns (Levels of Logic = 10)
+  Source:            paddleR_top_4 (FF)
+  Destination:       RED_OUT<2> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: paddleR_top_4 to RED_OUT<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              6   0.591   0.844  paddleR_top_4 (paddleR_top_4)
+     LUT4_D:I0->O          5   0.704   0.668  Madd_paddleR_on_add0001_xor<5>111 (N40)
+     LUT4:I2->O            1   0.704   0.000  Madd_paddleR_on_add0001_xor<8>11 (Madd_paddleR_on_add0001_xor<8>1)
+     MUXF5:I1->O           1   0.321   0.499  Madd_paddleR_on_add0001_xor<8>1_f5 (paddleR_on_add0001<8>)
+     LUT2:I1->O            1   0.704   0.000  Mcompar_paddleR_on_cmp_lt0001_lut<8> (Mcompar_paddleR_on_cmp_lt0001_lut<8>)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_paddleR_on_cmp_lt0001_cy<8> (Mcompar_paddleR_on_cmp_lt0001_cy<8>)
+     MUXCY:CI->O           1   0.459   0.455  Mcompar_paddleR_on_cmp_lt0001_cy<9> (Mcompar_paddleR_on_cmp_lt0001_cy<9>)
+     LUT4:I2->O            3   0.704   0.706  paddleR_on_and000076 (paddleR_on)
+     LUT4:I0->O            1   0.704   0.424  RED_OUT<1>_SW1 (N26)
+     LUT4:I3->O            3   0.704   0.531  RED_OUT<1> (RED_OUT_1_OBUF)
+     OBUF:I->O                 3.272          RED_OUT_2_OBUF (RED_OUT<2>)
+    ----------------------------------------
+    Total                     13.458ns (9.331ns logic, 4.127ns route)
+                                       (69.3% logic, 30.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.05 secs
+ 
+--> 
+
+Total memory usage is 264604 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
